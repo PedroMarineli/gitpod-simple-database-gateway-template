@@ -1,1 +1,19 @@
-GET https://8080-orange-mouse-etvamu87.ws-us18.gitpod.io/filmes/3 
+GET https://8080-chocolate-harrier-3t68ac4u.ws-us18.gitpod.io/filmes
+
+###
+
+POST https://8080-chocolate-harrier-3t68ac4u.ws-us18.gitpod.io/filmes
+Content-Type: application/json
+
+{
+    "titulo" : "Exemplo"
+}
+
+###
+
+PUT https://8080-chocolate-harrier-3t68ac4u.ws-us18.gitpod.io/filmes/5
+Content-Type: application/json
+
+{
+    "titulo" : "GhostBusters"
+}
