@@ -1,8 +1,9 @@
-GET https://8080-chocolate-harrier-3t68ac4u.ws-us18.gitpod.io/filmes
+@url = https://8080-green-condor-kk1mdctc.ws-us20.gitpod.io
+GET {{url}}/filmes
 
 ###
 
-POST https://8080-chocolate-harrier-3t68ac4u.ws-us18.gitpod.io/filmes
+POST {{url}}/filmes
 Content-Type: application/json
 
 {
@@ -11,9 +12,18 @@ Content-Type: application/json
 
 ###
 
-PUT https://8080-chocolate-harrier-3t68ac4u.ws-us18.gitpod.io/filmes/5
+PUT {{url}}/filmes/5
 Content-Type: application/json
 
 {
     "titulo" : "GhostBusters"
+}
+
+###
+
+DELETE {{url}}/filmes/5
+Content-Type: application/json
+
+{
+    "id" : 5
 }
